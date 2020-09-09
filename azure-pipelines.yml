@@ -1,0 +1,20 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    projects: 'SimpleWebHalloWorld.Test\SimpleWebHalloWorld.Test\SimpleWebHalloWorld.Test.csproj'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: 'SimpleWebHalloWorld\SimpleWebHalloWorld.csproj'
+
