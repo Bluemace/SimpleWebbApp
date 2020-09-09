@@ -1,0 +1,13 @@
+C:\Users\Jones\SimpleWebbApp\SimpleWebbApp\SimpleWebHalloWorld.Test\SimpleWebHalloWorld.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Jones\SimpleWebbApp\SimpleWebbApp\SimpleWebHalloWorld.Test\SimpleWebHalloWorld.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Jones\SimpleWebbApp\SimpleWebbApp\SimpleWebHalloWorld.Test\SimpleWebHalloWorld.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Jones\SimpleWebbApp\SimpleWebbApp\SimpleWebHalloWorld.Test\SimpleWebHalloWorld.Test\bin\Debug\SimpleWebHalloWorld.Test.dll
+C:\Users\Jones\SimpleWebbApp\SimpleWebbApp\SimpleWebHalloWorld.Test\SimpleWebHalloWorld.Test\bin\Debug\SimpleWebHalloWorld.Test.pdb
+C:\Users\Jones\SimpleWebbApp\SimpleWebbApp\SimpleWebHalloWorld.Test\SimpleWebHalloWorld.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Jones\SimpleWebbApp\SimpleWebbApp\SimpleWebHalloWorld.Test\SimpleWebHalloWorld.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Jones\SimpleWebbApp\SimpleWebbApp\SimpleWebHalloWorld.Test\SimpleWebHalloWorld.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Jones\SimpleWebbApp\SimpleWebbApp\SimpleWebHalloWorld.Test\SimpleWebHalloWorld.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Jones\SimpleWebbApp\SimpleWebbApp\SimpleWebHalloWorld.Test\SimpleWebHalloWorld.Test\obj\Debug\SimpleWebHalloWorld.Test.csprojAssemblyReference.cache
+C:\Users\Jones\SimpleWebbApp\SimpleWebbApp\SimpleWebHalloWorld.Test\SimpleWebHalloWorld.Test\obj\Debug\SimpleWebHalloWorld.Test.csproj.CopyComplete
+C:\Users\Jones\SimpleWebbApp\SimpleWebbApp\SimpleWebHalloWorld.Test\SimpleWebHalloWorld.Test\obj\Debug\SimpleWebHalloWorld.Test.dll
+C:\Users\Jones\SimpleWebbApp\SimpleWebbApp\SimpleWebHalloWorld.Test\SimpleWebHalloWorld.Test\obj\Debug\SimpleWebHalloWorld.Test.pdb

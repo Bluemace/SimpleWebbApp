@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UnitTestProject1
+namespace SimpleWebHalloWorld.Test
 {
     [TestClass]
     public class UnitTest1
@@ -10,24 +10,22 @@ namespace UnitTestProject1
         {
             //Arrange
             int x = 1;
-
             //Act
             x += 1;
-
             //Assert
             Assert.AreEqual(2, x);
-
-
         }
-
         [TestMethod]
+
         public void TestMethod2()
         {
-            bool sant;
+            //Arrange
+            bool test;
 
-            sant = true;
-
-            Assert.IsTrue(sant);
+            //Act
+            test = true;
+            //Assert
+            Assert.IsTrue(test);
         }
     }
 }
