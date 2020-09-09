@@ -17,5 +17,5 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    projects: '/SimpleWebHalloWorld.Test/SimpleWebHalloWorld.Test/SimpleWebHalloWorld.Test.csproj'
+    projects: 'SimpleWebHalloWorld.Test/SimpleWebHalloWorld.Test/*.csproj'
 
