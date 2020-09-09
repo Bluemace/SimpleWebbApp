@@ -26,6 +26,11 @@ steps:
   displayName: Build
   inputs:
     command: build
+    projects: 'SimpleWebHalloWorld.csproj'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    projects: 'UnitTestProject1/UnitTestProject1.csproj'
 
 
 
