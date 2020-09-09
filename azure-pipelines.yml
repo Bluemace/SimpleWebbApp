@@ -8,14 +8,17 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+- task: NuGetToolInstaller@1
 
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(solution)'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
     projects: 'SimpleWebHalloWorld/SimpleWebHalloWorld.csproj'
-- task: DotNetCoreCLI@2
+- task: VSTest@2
   inputs:
-    command: 'test'
-    projects: 'SimpleWebHalloWorld.Test/SimpleWebHalloWorld.Test/*.csproj'
-
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
