@@ -30,3 +30,11 @@ steps:
     arguments: '--configuration $(buildConfiguration) --output out'
     zipAfterPublish: false
 
+- task: Docker@2
+  inputs:
+    containerRegistry: 'ContainerTestAzure123'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
+    tags: $(Build.BuildId)
+
+
