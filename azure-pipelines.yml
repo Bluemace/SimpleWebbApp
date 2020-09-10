@@ -34,8 +34,9 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'ContainerTestAzure123'
+    repository: 'mcr.microsoft.com/dotnet/core/aspnet'
     command: 'buildAndPush'
-    Dockerfile: 'SimpleWebHalloWorld/Dockerfile'
-    tags: $(Build.BuildId)
+    Dockerfile: '**/Dockerfile'
+    tags: :$(Build.BuildID)
 
 
