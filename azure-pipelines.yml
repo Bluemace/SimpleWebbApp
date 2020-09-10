@@ -34,7 +34,7 @@ steps:
   inputs:
     containerRegistry: 'ContainerTestAzure123'
     command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
+    Dockerfile: 'SimpleWebHalloWorld/Dockerfile'
     tags: $(Build.BuildId)
 
 
