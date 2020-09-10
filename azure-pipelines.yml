@@ -37,6 +37,6 @@ steps:
     repository: 'corewebapp'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-    tags: :$(Build)
+ 
 
 
