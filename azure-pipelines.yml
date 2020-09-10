@@ -2,20 +2,39 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'windows-latest'
 
 variables:
   buildConfiguration: 'Release'
 
 steps:
+- task: NuGetToolInstaller@1
 
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(solution)'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
     projects: 'SimpleWebHalloWorld/SimpleWebHalloWorld.csproj'
+- task: VSTest@2
+  inputs:
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'test'
-    projects: 'SimpleWebHalloWorld.Test/SimpleWebHalloWorld.Test/*.csproj'
+    command: 'publish'
+    publishWebProjects: true
+    arguments: '--configuration $(buildConfiguration) --output out'
+    zipAfterPublish: false
+
+- task: Docker@2
+  inputs:
+    containerRegistry: 'ContainerTestAzure123'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
+    tags: $(Build.BuildId)
+
 
