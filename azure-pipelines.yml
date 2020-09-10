@@ -2,7 +2,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'Ubuntu-latest'
 
 variables:
   buildConfiguration: 'Release'
@@ -18,10 +18,11 @@ steps:
   inputs:
     command: 'build'
     projects: 'SimpleWebHalloWorld/SimpleWebHalloWorld.csproj'
-- task: VSTest@2
+
+- task: DotNetCoreCLI@2
   inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    command: 'test'
+    projects: 'SimpleWebHalloWorld.Test/SimpleWebHalloWorld.Test/SimpleWebHalloWorld.Test.csproj'
 
 - task: DotNetCoreCLI@2
   inputs:
