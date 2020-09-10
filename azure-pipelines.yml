@@ -34,7 +34,7 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'ContainerTestAzure123'
-    repository: 'sebbanjones1/azuredevopstest'
+    repository: 'sebbanjones1/azuredevopstest:$(Build.BuildId)'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
     tags: :$(Build.BuildID)
